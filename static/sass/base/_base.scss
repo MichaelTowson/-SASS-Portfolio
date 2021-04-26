@@ -25,11 +25,12 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 3rem; //Adds a white border to the whole page.
+    border: solid black 3rem;
+    min-height: 100vh;
 
     @include respond(tab-port) {
         font-size: 50%; 
-        padding: 0; //Removes default white border.
+        border: solid black .5rem;
     }
 
 }
