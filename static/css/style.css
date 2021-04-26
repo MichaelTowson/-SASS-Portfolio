@@ -1,3 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 50%;
+      padding: 0; } }
+
 body {
   font-family: "Lato", sans-serif;
   /* This was imported on my index.html page. */
@@ -13,19 +40,19 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 2rem;
     animation: moveInLeft 0.75s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
+        letter-spacing: 2rem;
         font-family: 5rem; } }
   .heading-primary--sub {
-    margin-bottom: 4rem;
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    animation: moveInRight 0.75s ease-out; }
+    animation: moveInRight 0.75s ease-out;
+    color: #f5f4ce; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
@@ -62,6 +89,15 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-absolute-position {
+  position: absolute !important; }
+
+.u-white-border {
+  border: solid #fff 1px !important; }
+
+.u-padding-small {
+  padding: .63rem .25rem !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -107,13 +143,24 @@ body {
     object-fit: cover; }
 
 .wire-box {
-  border: 1px solid #fff; }
+  display: block;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 2.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .75rem;
+  transition: all .2s;
+  cursor: pointer; }
+  .wire-box:hover {
+    background-color: #656de0; }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   height: 80vh;
   background-image: linear-gradient(to right, black, #020761), url(../img/hero.jpg);
@@ -122,8 +169,14 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65vh); }
   .header__text-box {
+    display: block;
     color: #fff;
+    padding: 4rem 20rem 4rem 12rem;
     background-color: rgba(0, 0, 0, 0.6);
-    transform: translate(-50%, -50%);
     text-align: center;
-    position: absolute; }
+    position: absolute;
+    height: 65%; }
+  .header__button {
+    margin-top: 5rem;
+    padding: 1rem;
+    border: solid #fff 1px !important; }
