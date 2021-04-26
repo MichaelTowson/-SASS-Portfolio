@@ -40,8 +40,7 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2rem;
-    animation: moveInLeft 0.75s ease-out; }
+    letter-spacing: 2rem; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 2rem;
@@ -51,7 +50,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    animation: moveInRight 0.75s ease-out;
     color: #f5f4ce; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
@@ -86,6 +84,30 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 .u-center-text {
   text-align: center !important; }
@@ -129,6 +151,21 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-animation-moveInBottom {
+  animation: moveInBottom 0.75s ease-out; }
+
+.u-animation-moveInTop {
+  animation: moveInTop 0.75s ease-out; }
+
+.u-animation-moveInLeft {
+  animation: moveInLeft 0.75s ease-out; }
+
+.u-animation-moveInRight {
+  animation: moveInRight 0.75s ease-out; }
+
+.u-animation-delay-1 {
+  animation-delay: 1s; }
+
 .bg-video {
   top: 0;
   left: 0;
@@ -168,7 +205,7 @@ body {
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65vh); }
-  .header__text-box {
+  .header__logo-box {
     display: block;
     color: #fff;
     padding: 4rem 20rem 4rem 12rem;

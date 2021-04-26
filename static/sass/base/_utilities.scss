@@ -30,3 +30,10 @@
 .u-margin-top-medium {margin-top: 4rem !important;}
 .u-margin-top-large {margin-top: 8rem !important;}
 .u-margin-top-huge {margin-top: 10rem !important;}
+
+//Animations
+.u-animation-moveInBottom {animation: moveInBottom 0.75s ease-out;}
+.u-animation-moveInTop {animation: moveInTop 0.75s ease-out;}
+.u-animation-moveInLeft {animation: moveInLeft 0.75s ease-out;}
+.u-animation-moveInRight {animation: moveInRight 0.75s ease-out;}
+.u-animation-delay-1 {animation-delay: 1s};
