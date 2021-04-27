@@ -81,9 +81,9 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
-.paragraph {
+p {
   font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
+  p:not(:last-child) {
     margin-bottom: 3rem; }
 
 @keyframes moveInRight {
@@ -166,6 +166,10 @@ body {
 
 .u-animation-delay-1 {
   animation-delay: 1s; }
+
+.section-about {
+  margin-top: -5rem;
+  padding: 1rem 5rem; }
 
 .bg-video {
   top: 0;
