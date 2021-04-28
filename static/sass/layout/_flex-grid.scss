@@ -4,9 +4,30 @@
     flex-direction: row;
 }
 
+.flex-column-20 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+}
+
 .flex-column-50 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
+}
+
+.flex-column-80 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+
+.flex-column-fill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
 }

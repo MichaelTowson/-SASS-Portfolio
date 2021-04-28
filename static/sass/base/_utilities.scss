@@ -5,11 +5,14 @@
 
 //Borders
 .u-white-border {border: solid #fff 1px !important;}
+.u-bottom-border-tertiary {border-bottom: solid $color-tertiary 1px !important;}
+.u-top-border-tertiary {border-top: solid $color-tertiary 1px !important;}
 
 //Padding
 .u-padding-small {padding: .63rem .25rem !important;}
 
 //Margins
+.u-margin-bottom-tiny {margin-bottom: 0.5rem !important;}
 .u-margin-bottom-small {margin-bottom: 1.5rem !important;}
 .u-margin-bottom-medium {
     margin-bottom: 4rem !important;

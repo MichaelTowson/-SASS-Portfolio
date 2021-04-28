@@ -21,6 +21,13 @@
     box-shadow: $shadow;
 }
 
+@mixin light-up-tertiary {
+    border-radius: 100%;
+    background-color: rgba($color-tertiary, 0.7);
+    transform: scale(2.5);
+    padding: calc(+.4rem);
+}
+
 @mixin light-up-yellow {
     border-radius: 100%;
     background-color: rgba(lightblue, 0.7);

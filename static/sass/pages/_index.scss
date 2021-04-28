@@ -2,13 +2,13 @@
 .section-about {
     display: flex;
     margin-top: -5rem;
-    padding: 1rem 5rem;
+    padding: 3rem 5rem 6rem 5rem;
 }
 
-.profile-pic {
+.round-pic {
     border-radius: 100%;
     box-shadow: $shadow;
-    width: 25%;
+    width: 100%;
 }
 
 .about-textbox {
@@ -19,9 +19,10 @@
 //TECHNOLOGIES SECTION
 .section-technologies {    
     padding: 5rem;
+    background-color: rgba($color-primary-light-1, .8);
 }
 
-.technologies-dock {
+.dock {
     margin-top: 4rem;
     padding: 2rem;
     background-color: black;
@@ -31,6 +32,7 @@
     justify-content: space-evenly;
     transition: all .2s;
     border-radius: 2rem;
+    border: solid $color-secondary 4px;
     
     &:hover {
         @include hover-grow;
@@ -44,7 +46,7 @@
 
         &:hover {
             @include hover-grow;
-            @include light-up-yellow;
+            @include light-up-tertiary;
         }
     }
 }
