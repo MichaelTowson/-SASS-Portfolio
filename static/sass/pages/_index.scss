@@ -1,4 +1,50 @@
+//ABOUT SECTION
 .section-about {
+    display: flex;
     margin-top: -5rem;
     padding: 1rem 5rem;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    box-shadow: $shadow;
+    width: 25%;
+}
+
+.about-textbox {
+    margin-left: 4rem;
+    align-self: center;
+}
+
+//TECHNOLOGIES SECTION
+.section-technologies {    
+    padding: 5rem;
+}
+
+.technologies-dock {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .2s;
+    border-radius: 2rem;
+    
+    &:hover {
+        @include hover-grow;
+    }
+
+    &__icon {
+        width: 6.6rem;
+        height: 6.6rem;
+        border-radius: 25%;
+        transition: all .2s;
+
+        &:hover {
+            @include hover-grow;
+            @include light-up-yellow;
+        }
+    }
 }

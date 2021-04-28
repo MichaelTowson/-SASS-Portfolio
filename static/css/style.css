@@ -168,8 +168,47 @@ p {
   animation-delay: 1s; }
 
 .section-about {
+  display: flex;
   margin-top: -5rem;
   padding: 1rem 5rem; }
+
+.profile-pic {
+  border-radius: 100%;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  width: 25%; }
+
+.about-textbox {
+  margin-left: 4rem;
+  align-self: center; }
+
+.section-technologies {
+  padding: 5rem; }
+
+.technologies-dock {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all .2s;
+  border-radius: 2rem; }
+  .technologies-dock:hover {
+    transform: scale(1.02) translateY(-1rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+  .technologies-dock__icon {
+    width: 6.6rem;
+    height: 6.6rem;
+    border-radius: 25%;
+    transition: all .2s; }
+    .technologies-dock__icon:hover {
+      transform: scale(1.02) translateY(-1rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+      background-color: rgba(173, 216, 230, 0.7);
+      transform: scale(1.2);
+      padding: calc(+.4rem); }
 
 .bg-video {
   top: 0;

@@ -21,6 +21,13 @@
     box-shadow: $shadow;
 }
 
+@mixin light-up-yellow {
+    border-radius: 100%;
+    background-color: rgba(lightblue, 0.7);
+    transform: scale(1.2);
+    padding: calc(+.4rem);
+}
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) {@content}; //1 em = 16px. Because we're aiming for 600px, we do 600px/16px, which gives 37.5em.
