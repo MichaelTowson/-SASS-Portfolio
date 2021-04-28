@@ -1,0 +1,12 @@
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-column-50 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
