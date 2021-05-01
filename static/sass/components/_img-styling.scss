@@ -1,0 +1,37 @@
+.round-img {
+    border-radius: 100%;
+    box-shadow: $shadow;
+    width: 100%;
+}
+
+.rectangular-img {
+    border-radius: 0%;
+    box-shadow: $shadow;
+    width: 100%;
+}
+
+.rounded-img {
+    border-radius: 1%;
+    box-shadow: $shadow;
+    width: 100%;
+
+    &:hover {
+        @include hover-grow;
+    }
+}
+
+.slanted-background {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .35;
+    overflow: hidden;
+    
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
