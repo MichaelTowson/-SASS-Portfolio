@@ -1,42 +1,35 @@
 .flex-row {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-direction: row;
-    overflow: hidden;
 }
 
 .flex-column-20 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column-global-settings;
     width: 20%;
 }
 
 .flex-column-33 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column-global-settings;
     width: 33%;
 }
 
+.flex-column-40 {
+    @include flex-column-global-settings;
+    width: 40%;
+}
+
 .flex-column-50 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column-global-settings;
     width: 50%;
-    border: solid black 1px;
 }
 
 .flex-column-80 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
+    @include flex-column-global-settings;
+    width: 80%;
 }
 
 .flex-column-fill {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column-global-settings;
     width: auto;
 }

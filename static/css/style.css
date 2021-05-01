@@ -149,6 +149,9 @@ p {
 .u-padding-small {
   padding: .63rem .25rem !important; }
 
+.u-padding-3rem {
+  padding: 3rem !important; }
+
 .u-margin-bottom-tiny {
   margin-bottom: 0.5rem !important; }
 
@@ -279,9 +282,10 @@ p {
   width: 100%; }
 
 .rounded-img {
-  border-radius: 1%;
+  border-radius: 0.5%;
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  width: 100%; }
+  width: 100%;
+  transition: all .2s; }
   .rounded-img:hover {
     transform: scale(1.02) translateY(-1rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
@@ -370,9 +374,7 @@ p {
 
 .flex-row {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  overflow: hidden; }
+  flex-direction: row; }
 
 .flex-column-20 {
   display: flex;
@@ -386,18 +388,23 @@ p {
   flex-direction: column;
   width: 33%; }
 
+.flex-column-40 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 40%; }
+
 .flex-column-50 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 50%;
-  border: solid black 1px; }
+  width: 50%; }
 
 .flex-column-80 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 50%; }
+  width: 80%; }
 
 .flex-column-fill {
   display: flex;

@@ -11,9 +11,10 @@
 }
 
 .rounded-img {
-    border-radius: 1%;
+    border-radius: 0.5%;
     box-shadow: $shadow;
     width: 100%;
+    transition: all .2s;
 
     &:hover {
         @include hover-grow;
