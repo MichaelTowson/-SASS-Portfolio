@@ -216,35 +216,12 @@ body {
   padding: 5rem;
   background-color: rgba(164, 169, 235, 0.8); }
 
-.dock {
-  margin-top: 4rem;
-  padding: 2rem;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all .2s;
-  border-radius: 2rem;
-  border: solid #ffb900 4px; }
-  .dock:hover {
-    transform: scale(1.02) translateY(-1rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
-  .dock__icon {
-    width: 6.6rem;
-    height: 6.6rem;
-    border-radius: 25%;
-    transition: all .2s; }
-    .dock__icon:hover {
-      transform: scale(1.02) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      border-radius: 100%;
-      background-color: rgba(115, 183, 246, 0.7);
-      transform: scale(2.5);
-      padding: calc(+.4rem); }
-
 .section-projects {
-  padding: 5rem; }
+  padding: 5rem;
+  background-color: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%);
+  background-size: 100%; }
+  .section-projects:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .bg-video {
   top: 0;
@@ -312,7 +289,7 @@ body {
   overflow: clip;
   flex-direction: row;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: black;
   width: 100%;
   padding: 1rem; }
   .gallery__thumbnail {
@@ -323,6 +300,35 @@ body {
     .gallery__thumbnail:hover {
       border: solid #73b7f6 3px;
       box-sizing: border-box; }
+
+.dock {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all .2s;
+  border-radius: 2rem;
+  border: solid #ffb900 4px; }
+  .dock:hover {
+    transform: scale(1.02) translateY(-1rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+  .dock__icon {
+    width: 6.6rem;
+    height: 6.6rem;
+    border-radius: 25%;
+    transition: all .2s;
+    background-color: white;
+    padding: 1rem; }
+    .dock__icon:hover {
+      transform: scale(1.02) translateY(-1rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+      background-color: rgba(115, 183, 246, 0.7);
+      transform: scale(2.5);
+      padding: calc(+.4rem); }
 
 .header {
   display: flex;

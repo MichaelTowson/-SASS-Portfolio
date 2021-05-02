@@ -1,0 +1,30 @@
+.dock {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .2s;
+    border-radius: 2rem;
+    border: solid $color-secondary 4px;
+    
+    &:hover {
+        @include hover-grow;
+    }
+
+    &__icon {
+        width: 6.6rem;
+        height: 6.6rem;
+        border-radius: 25%;
+        transition: all .2s;
+        background-color: white;
+        padding: 1rem;
+
+        &:hover {
+            @include hover-grow;
+            @include light-up-tertiary;
+        }
+    }
+}

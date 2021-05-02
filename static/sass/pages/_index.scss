@@ -16,37 +16,21 @@
     background-color: rgba($color-primary-light-1, .8);
 }
 
-.dock {
-    margin-top: 4rem;
-    padding: 2rem;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all .2s;
-    border-radius: 2rem;
-    border: solid $color-secondary 4px;
-    
-    &:hover {
-        @include hover-grow;
-    }
-
-    &__icon {
-        width: 6.6rem;
-        height: 6.6rem;
-        border-radius: 25%;
-        transition: all .2s;
-
-        &:hover {
-            @include hover-grow;
-            @include light-up-tertiary;
-        }
-    }
-}
-
 //PROJECTS SECTION
 .section-projects {
     padding: 5rem;
+    
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    
+    background-color: linear-gradient(105deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%, transparent 50%);
+    background-size: 100%;
+}
+
+.featured-project {
+
 }
 
