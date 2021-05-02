@@ -25,20 +25,11 @@
 //PROJECTS SECTION
 .section-projects {
     padding: 5rem;
-    
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
-    
     background: linear-gradient(105deg,
                                     transparent 0%,
-                                    rgba($color-white, .9) 50%,
-                                    rgba($color-primary, .7) 100%
+                                    rgba($color-white, .9) 40%,
+                                    rgba($color-primary, .5) 100%
                                 );
     background-size: 100%;
-}
-
-.featured-project {
-
 }
 
