@@ -1,0 +1,57 @@
+.featured-project {
+    background-color: white;
+    border-left: solid $color-primary 6px;
+    padding: 4rem 3rem;
+    box-shadow: $shadow;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2rem;
+        width: 60%
+    }
+
+    &__image {
+        border-radius: 0.5%;
+        width: 40%;
+        transition: all .2s;
+
+    &:hover {
+        @include hover-grow;
+    }
+    }
+
+    &__gallery {
+        margin-top: 4rem;
+        display: flex;
+        overflow: clip;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        background: black;
+        padding: 4px;
+
+            &-thumbnail {
+            width: 25%;
+            height: auto;
+            cursor: pointer;
+            object-fit: cover;
+            border: solid black 3px;
+            
+                &:hover {
+                    border: solid $color-tertiary 3px;
+                    box-sizing: border-box;
+                }
+            }
+    }
+    
+    &:not(:last-child) {
+        margin-bottom: 7rem;
+    }
+}

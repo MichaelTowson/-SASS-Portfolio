@@ -27,6 +27,8 @@ body {
     box-sizing: border-box;
     border: solid black 3rem;
     min-height: 100vh;
+    background-color: white;
+    padding: 1px;
 
     @include respond(tab-port) {
         font-size: 50%; 
