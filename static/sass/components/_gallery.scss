@@ -1,0 +1,22 @@
+.gallery {
+    margin-top: 4rem;
+    display: flex;
+    overflow: clip;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgray;
+    width: 100%;
+    padding: 1rem;
+
+    &__thumbnail {
+    width: 33%;
+    height: auto;
+    cursor: pointer;
+    object-fit: cover;
+    
+        &:hover {
+            border: solid $color-tertiary 3px;
+            box-sizing: border-box;
+        }
+    }
+}

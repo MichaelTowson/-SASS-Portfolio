@@ -1,35 +1,31 @@
+//FLEX ROW
 .flex-row {
     display: flex;
     // flex-wrap: wrap;
     flex-direction: row;
 }
 
-.flex-column-20 {
-    @include flex-column-global-settings;
-    width: 20%;
+//FLEX COLUMN
+
+//--Global Settings
+[class^="flex-column"] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.flex-column-33 {
-    @include flex-column-global-settings;
-    width: 33%;
-}
-
-.flex-column-40 {
-    @include flex-column-global-settings;
-    width: 40%;
-}
-
-.flex-column-50 {
-    @include flex-column-global-settings;
-    width: 50%;
-}
-
-.flex-column-80 {
-    @include flex-column-global-settings;
-    width: 80%;
-}
-
-.flex-column-fill {
-    @include flex-column-global-settings;
-    width: auto;
+//--Different Widths
+.flex-column {
+    &-10 {width: 10%;}
+    &-20 {width: 20%;}
+    &-25 {width: 25%;}
+    &-33 {width: 33%;}
+    &-40 {width: 40%;}
+    &-50 {width: 50%;}
+    &-60 {width: 60%;}
+    &-66 {width: 66%;}
+    &-75 {width: 75%;}
+    &-80 {width: 80%;}
+    &-fill {width: auto;}
 }

@@ -15,13 +15,6 @@
 
 //Crop
 
-//Flex-Grid Global
-@mixin flex-column-global-settings {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 //Hover Effects
 @mixin hover-grow {
     transform: scale(1.02) translateY(-1rem);
