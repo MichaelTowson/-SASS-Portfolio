@@ -3,6 +3,12 @@
     display: flex;
     margin-top: -5rem;
     padding: 3rem 5rem 6rem 5rem;
+    background: linear-gradient(100deg,
+                                    transparent 0%,
+                                    rgba($color-white, .7) 95%,
+                                    rgba($color-primary, .4) 100%
+                                );
+    background-size: 100%;
 }
 
 .about-textbox {
@@ -24,9 +30,11 @@
         margin-bottom: 3rem;
     }
     
-    background-color: linear-gradient(105deg, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 50%, transparent 50%);
+    background: linear-gradient(105deg,
+                                    transparent 0%,
+                                    rgba($color-white, .9) 50%,
+                                    rgba($color-primary, .7) 100%
+                                );
     background-size: 100%;
 }
 
