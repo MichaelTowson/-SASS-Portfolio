@@ -354,6 +354,7 @@ body {
     flex-direction: row;
     justify-content: left;
     width: 100%;
+    height: 20rem;
     background: black;
     padding: 4px; }
     .featured-project__gallery-thumbnail {
