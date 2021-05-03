@@ -329,8 +329,9 @@ body {
 
 .featured-project {
   background-color: white;
-  padding-top: 2rem;
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  overflow: hidden; }
   .featured-project__title {
     text-align: center;
     margin-bottom: 6rem; }
@@ -345,12 +346,9 @@ body {
     border-radius: 0.5%;
     width: 40%;
     transition: all .2s;
-    align-self: flex-start; }
-    .featured-project__image:hover {
-      transform: scale(1.02) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+    object-fit: cover;
+    -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0))); }
   .featured-project__gallery {
-    margin-top: 4rem;
     display: flex;
     overflow: clip;
     flex-direction: row;

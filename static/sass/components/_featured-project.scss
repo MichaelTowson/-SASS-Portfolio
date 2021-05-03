@@ -1,7 +1,8 @@
 .featured-project {
-    background-color: white;
-    padding-top: 2rem;
+    background-color: white;;
     box-shadow: $shadow;
+    border-radius: 2rem;
+    overflow: hidden;
 
     &__title {
         text-align: center;
@@ -21,15 +22,12 @@
         border-radius: 0.5%;
         width: 40%;
         transition: all .2s;
-        align-self: flex-start;
-
-    &:hover {
-        @include hover-grow;
-    }
+        object-fit: cover;
+        -webkit-mask-image: -webkit-gradient(linear, right top, left top, 
+        from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     }
 
     &__gallery {
-        margin-top: 4rem;
         display: flex;
         overflow: clip;
         flex-direction: row;
