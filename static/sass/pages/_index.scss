@@ -1,8 +1,8 @@
 //ABOUT SECTION
 .section-about {
     display: flex;
-    margin-top: -5rem;
-    padding: 3rem 5rem 6rem 5rem;
+    flex-direction: column;
+    padding: 8rem 6rem;
     background: linear-gradient(100deg,
                                     transparent 0%,
                                     rgba($color-white, .7) 95%,
@@ -17,14 +17,16 @@
 }
 
 //TECHNOLOGIES SECTION
-.section-technologies {    
-    padding: 5rem;
-    background-color: rgba($color-primary-light-1, .8);
+.section-technologies {
+    display: flex;
+    flex-direction: column;    
+    padding: 8rem;
+    background-color: rgba($color-primary-dark-1, .8);
 }
 
 //PROJECTS SECTION
 .section-projects {
-    padding: 5rem;
+    padding: 12rem;
     background: linear-gradient(105deg,
                                     transparent 0%,
                                     rgba($color-white, .9) 40%,
