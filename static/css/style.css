@@ -243,6 +243,13 @@ body {
   display: flex;
   flex-direction: column; }
 
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(22, 25, 73, 0.8); }
+  .section-contact p {
+    color: white; }
+
 .bg-video {
   top: 0;
   left: 0;

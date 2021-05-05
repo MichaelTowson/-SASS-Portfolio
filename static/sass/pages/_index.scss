@@ -37,3 +37,14 @@
     flex-direction: column;
 }
 
+//CONTACT SECTION
+.section-contact {
+    display: flex;
+    flex-direction: column;    
+    background-color: rgba($color-primary-dark-1, .8);
+
+    & p {
+        color: white;
+    }
+}
+
