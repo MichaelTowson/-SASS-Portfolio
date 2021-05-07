@@ -268,16 +268,20 @@ body {
   background-color: rgba(22, 25, 73, 0.8); }
 
 .section-projects {
-  padding: 12rem;
+  padding: 12rem 20rem;
   background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.9) 40%, rgba(2, 7, 97, 0.5) 100%);
   background-size: 100%;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 112.5em) {
+    .section-projects {
+      padding: 20rem 50rem; } }
 
 .section-contact {
   display: flex;
   flex-direction: column;
-  background-color: rgba(22, 25, 73, 0.8);
+  background: linear-gradient(to bottom, rgba(22, 25, 73, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%);
+  background-size: 100%;
   padding: 0; }
   .section-contact p {
     color: white; }
@@ -321,7 +325,7 @@ body {
   width: 100%; }
 
 .rectangular-gradient-left {
-  width: auto;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))); }
@@ -454,7 +458,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #fff, #020761);
+    background-image: linear-gradient(to right, #fff, #a4a9eb);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -537,8 +541,7 @@ body {
 [class^="flex-column"] {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  overflow: hidden; }
+  flex-direction: column; }
 
 .flex-column-10 {
   width: 10%; }
