@@ -166,7 +166,7 @@ body {
   padding: 3rem !important; }
 
 .u-padding-none {
-  padding: none !important; }
+  padding: 0 !important; }
 
 .u-color-white {
   color: white !important; }
@@ -246,9 +246,14 @@ body {
 .section-contact {
   display: flex;
   flex-direction: column;
-  background-color: rgba(22, 25, 73, 0.8); }
+  background-color: rgba(22, 25, 73, 0.8);
+  padding: 0; }
   .section-contact p {
     color: white; }
+  .section-contact__text {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem; }
 
 .bg-video {
   top: 0;
@@ -283,10 +288,10 @@ body {
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   width: 100%; }
 
-.rectangular-img {
-  border-radius: 0%;
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  width: 100%; }
+.rectangular-gradient-left {
+  width: auto;
+  object-fit: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))); }
 
 .rounded-img {
   border-radius: 0.5%;

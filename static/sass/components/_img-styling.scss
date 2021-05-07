@@ -4,10 +4,11 @@
     width: 100%;
 }
 
-.rectangular-img {
-    border-radius: 0%;
-    box-shadow: $shadow;
-    width: 100%;
+.rectangular-gradient-left {
+    width: auto;
+    object-fit: cover;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
+        from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .rounded-img {
