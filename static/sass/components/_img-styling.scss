@@ -6,6 +6,7 @@
 
 .rectangular-gradient-left {
     width: auto;
+    height: 100%;
     object-fit: cover;
     -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
         from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));

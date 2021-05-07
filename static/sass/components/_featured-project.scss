@@ -4,6 +4,7 @@
     border-radius: 2rem;
     overflow: hidden;
     transition: all .4s;
+    width: 100%;
 
     &:hover {
         @include hover-grow;

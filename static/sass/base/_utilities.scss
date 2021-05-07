@@ -1,5 +1,8 @@
 //Flex
-.u-align-items-top {align-items:flex-start;}
+.u-align-items-top {align-items:flex-start !important;}
+.u-space-between {justify-content: space-between !important;}
+.u-space-around {justify-content: space-around !important;}
+.u-center {justify-content: center !important;}
 
 //Text Align
 .u-center-text {text-align: center !important;}
@@ -15,7 +18,10 @@
 //Padding
 .u-padding-small {padding: .63rem .25rem !important;}
 .u-padding-6rem {padding: 3rem !important;}
+.u-padding-4rem {padding: 4rem !important;}
 .u-padding-3rem {padding: 3rem !important;}
+.u-padding-1rem {padding: 1rem !important;}
+.u-padding-2rem {padding: 2rem !important;}
 .u-padding-none {padding: 0 !important;}
 
 //Font Color
