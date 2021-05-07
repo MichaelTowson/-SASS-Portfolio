@@ -1,4 +1,4 @@
-p {
+p, li {
     font-size: $default-font-size;
     &:not(:last-child) {
         margin-bottom: 3rem;
@@ -105,6 +105,19 @@ body {
     text-transform: uppercase;
     color: $color-primary;
     margin-bottom: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-print {
+    font-style: italic;
+    font-size: 8px;
+}
+
+.line-break {
+    display: block;
 }
 
 
