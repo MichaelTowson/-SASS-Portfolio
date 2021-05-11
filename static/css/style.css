@@ -340,6 +340,12 @@ body {
   object-fit: cover;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))); }
 
+.rectangular-gradient-right {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0))); }
+
 .rounded-img {
   border-radius: 0.5%;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
