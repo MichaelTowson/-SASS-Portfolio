@@ -4,19 +4,28 @@
     background-color: rgba($color-black, .45);
     font-size: 1.5rem;
     margin: 1rem 6rem;
-    padding: 2rem;
+    padding-left: 2rem;
     text-align: left;
     border-radius: 6px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
     transition: transform .25s;
     height: 100%;
+    overflow: hidden;
 
     &__form {
         background-color: rgba($color-black, .45);
         padding: 2rem;
+        z-index: 8;
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        width: 50%;
+        display: flex;
     }
 
     &__heading {
+        margin-top: 2rem;
         color: $color-secondary;
     }
 
