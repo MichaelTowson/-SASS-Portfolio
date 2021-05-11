@@ -10,6 +10,7 @@
     padding: .75rem;
     transition: all .2s;
     cursor: pointer;
+    width: 100%;
 
     &:hover {
         background-color: $color-tertiary;
