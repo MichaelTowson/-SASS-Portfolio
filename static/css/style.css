@@ -444,13 +444,12 @@ body {
     background-color: black;
     color: white;
     padding: 4rem;
-    width: 70%; }
+    width: 100%; }
   .featured-project__description {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
-    margin: 12rem 0 10rem 0; }
+    width: 70%; }
   .featured-project__image {
     border-radius: 0.5%;
     width: 30%;
@@ -462,11 +461,13 @@ body {
     overflow: clip;
     flex-direction: row;
     justify-content: left;
-    width: 100%;
+    margin-left: 30%;
+    width: 70%;
     height: 15rem;
     background: black;
     padding: 4px;
-    margin-bottom: 4rem; }
+    margin-top: 14rem;
+    margin-bottom: 6rem; }
     .featured-project__gallery-thumbnail {
       width: 25%;
       height: auto;
