@@ -241,6 +241,9 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-left-small {
+  margin-left: 4rem !important; }
+
 .u-animation-moveInBottom {
   animation: moveInBottom 0.75s ease-out; }
 
@@ -436,21 +439,21 @@ body {
   margin-bottom: 2rem;
   padding: 0; }
   .featured-project__title {
-    text-align: center;
-    margin-bottom: 6rem;
+    text-align: left;
+    margin-bottom: 12rem;
     background-color: black;
     color: white;
-    padding: 4rem; }
+    padding: 4rem;
+    width: 70%; }
   .featured-project__description {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     margin: 12rem 0 10rem 0; }
   .featured-project__image {
     border-radius: 0.5%;
-    margin-left: 12rem;
-    width: 40%;
+    width: 30%;
     transition: all .2s;
     object-fit: cover;
     -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0))); }
@@ -470,7 +473,7 @@ body {
       object-fit: cover;
       border: solid black 3px; }
   .featured-project__list-item {
-    margin-left: 4rem;
+    margin-left: 8rem;
     font-size: 1.6rem; }
 
 .feature-box-grid {
