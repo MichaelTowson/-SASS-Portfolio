@@ -5,21 +5,9 @@
     overflow: hidden;
     transition: all .4s;
     width: 100%;
-    transform: scale(.7);
     border: solid transparent 3px;
-
-    &:hover {
-        border: solid $color-tertiary 3px;
-        cursor: pointer;
-        transform: scale(.7) translateY(-2rem);
-    }
-
-    &:focus {
-        transform: scale(1.1);
-        cursor: auto;
-        z-index: 10;
-        border: solid $color-tertiary 3px;
-    }
+    margin-bottom: 2rem;
+    padding: 0;
 
     &__title {
         text-align: center;
@@ -35,7 +23,7 @@
         flex-direction: column;
         width: 60%;
         // border-left: solid $color-primary 1px;
-        margin: 8rem 0 8rem 6rem;
+        margin: 12rem 0 10rem 0;
     }
 
     &__image {
@@ -62,14 +50,15 @@
             &-thumbnail {
             width: 25%;
             height: auto;
-            cursor: pointer;
+            // cursor: pointer;
             object-fit: cover;
             border: solid black 3px;
             
-                &:hover {
-                    border: solid $color-tertiary 3px;
-                    box-sizing: border-box;
-                }
+                //Note - Gallery feature disabled until javascript can be integrated.
+                // &:hover {
+                //     border: solid $color-tertiary 3px;
+                //     box-sizing: border-box;
+                // }
             }
     }
 
@@ -81,7 +70,7 @@
         }
     }
     
-    &:not(:last-child) {
-        margin-bottom: -60rem;
-    }
+    // &:not(:last-child) {
+    //     margin-bottom: -60rem;
+    // }
 }
