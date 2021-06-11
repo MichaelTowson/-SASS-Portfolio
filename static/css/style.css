@@ -277,7 +277,7 @@ body {
   background-color: rgba(22, 25, 73, 0.8); }
 
 .section-projects {
-  padding: 2rem .5rem;
+  padding: 2rem 2rem;
   background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.9) 40%, rgba(2, 7, 97, 0.5) 100%);
   background-size: 100%;
   display: flex;
