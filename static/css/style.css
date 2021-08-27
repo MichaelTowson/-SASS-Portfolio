@@ -21,12 +21,15 @@ body {
   box-sizing: border-box;
   border: solid black 1.5rem;
   min-height: 100vh;
-  background-color: white;
+  background-color: black;
   padding: 1px; }
   @media (max-width: 56.25em) {
     body {
       font-size: 50%;
       border: solid black .5rem; } }
+
+main {
+  border: solid white 1px; }
 
 p, li {
   font-size: 1.6rem; }
@@ -38,7 +41,7 @@ body {
   /* This was imported on my index.html page. */
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #999; }
 
 .heading-primary {
   color: #fff;
@@ -67,23 +70,18 @@ body {
   font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  color: white;
   display: inline-block;
-  background-image: linear-gradient(to right, #161949, #000221);
-  -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
   margin-bottom: 4rem;
-  text-align: center; }
+  text-align: left; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  .heading-secondary:hover {
-    transform: skewX(7deg) skewY(5deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15); }
 
 .heading-secondary-2 {
   font-size: 4.5rem;
@@ -262,33 +260,26 @@ body {
 .section-about {
   display: flex;
   flex-direction: column;
-  padding: 8rem 6rem;
-  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.7) 95%, rgba(2, 7, 97, 0.4) 100%);
-  background-size: 100%; }
+  padding: 14rem 20rem; }
 
 .about-textbox {
   margin-left: 4rem;
   align-self: center; }
 
-.section-technologies {
+.section-skills {
   display: flex;
   flex-direction: column;
-  padding: 8rem;
-  background-color: rgba(22, 25, 73, 0.8); }
+  padding: 14rem 20rem; }
 
-.section-projects {
-  padding: 2rem 2rem;
-  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.9) 40%, rgba(2, 7, 97, 0.5) 100%);
-  background-size: 100%;
+.section-portfolio {
+  padding: 14rem 20rem;
   display: flex;
   flex-direction: column; }
 
 .section-contact {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(22, 25, 73, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%);
-  background-size: 100%;
-  padding: 0; }
+  padding: 14rem 0rem; }
   .section-contact p {
     color: white; }
   .section-contact li {
@@ -484,10 +475,10 @@ body {
   justify-content: center; }
 
 .feature-box {
-  background-color: rgba(0, 0, 0, 0.45);
   font-size: 1.5rem;
   padding: 10%;
   text-align: center;
+  border: 1px solid white;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: transform .25s;
@@ -506,7 +497,8 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1rem) scale(1.03);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    background-color: rgba(2, 7, 97, 0.5); }
 
 .contact-form {
   display: flex;

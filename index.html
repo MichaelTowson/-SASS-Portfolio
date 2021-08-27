@@ -7,13 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    
     <!-- Icon style sheet -->
     <link rel="stylesheet" href="/static/css/icon-font.css">
 
     <!-- Primary style sheet, compiled by all scss files. -->
     <link rel="stylesheet" href="/static/css/style.css">
-
     <link rel="shortcut icon" type="image.png" href="../img/favicon.png">
     
     <!-- close navigation script -->
@@ -26,270 +30,171 @@
 </head>
 
 <body>
-
-<!-- HEADER -->
-    <header class="header">
-        <div class="bg-video">
-            <video class="bg-video__video" autoplay muted loop>
-                <source src="static/media/codingwebm.webm" type="video/mp4">
-                Your browser does not support playing this video
-            </video>
-        </div>
-        <div class="header__logo-box u-animation-moveInBottom">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Michael Towson</span>
-                <span class="heading-primary--sub">Full-Stack Web Developer</span>
-                <span class="heading-primary--sub">Online Portfolio</span>
-            </h1>
-            <div class="header__button u-animation-moveInLeft">
-                <a href="#" class="wire-box">View My Work</a>
+    <main class="main">
+    <!-- HEADER -->
+        <header class="header">
+            <div class="bg-video">
+                <video class="bg-video__video" autoplay muted loop>
+                    <source src="static/media/codingwebm.webm" type="video/mp4">
+                    Your browser does not support playing this video
+                </video>
             </div>
-        </div>
-
-    </header>
-
-<!-- ABOUT SECTION -->
-    Test change
-    <section class="section-about">
-        <h2 class="heading-secondary">About</h2>
-        <div class="flex-row">
-            <div class="flex-column-20">
-                    <img src="/static/media/profile-pic.jpg" alt="" class="round-img">
-            </div>
-            <div class="flex-column-fill">
-                <div class="about-textbox">
-                    <p>Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
+            <div class="header__logo-box u-animation-moveInBottom">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Michael Towson</span>
+                    <span class="heading-primary--sub">Full-Stack Web Developer</span>
+                    <span class="heading-primary--sub">Online Portfolio</span>
+                </h1>
+                <div class="header__button u-animation-moveInLeft">
+                    <a href="#" class="wire-box">View My Work</a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-<!-- TECHONOLOGIES SECTION -->
-    <section class="section-technologies">
-        <h2 class="heading-secondary-2">Technologies</h2>
-        <div class="dock">
-            <a href="#" class = dock__icon>
-                <img src="/static/media/technology_icons/html_64x64.png" alt="HTML Icon" class="dock__icon--image">
-                    <span class="dock__icon-text">HTML</span>
-            </a>
-            <!-- <img src="/static/media/technology_icons/css_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/sass_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/javascript_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/react_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/python_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/java_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/django_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/mysql_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/mongodb_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/spring_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/visualstudio_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/postman_64x64.png" alt="HTML Icon" class="dock__icon-image">
-            <img src="/static/media/technology_icons/git_64x64.png" alt="HTML Icon" class="dock__icon-image"> -->
-        </div>
-    </section>
-    
-<!-- FEATURED PROJECTS -->
-    <section class="section-projects">
-        <h2 class="heading-secondary">My Work</h2>
+
+        </header>
+
+    <!-- ABOUT SECTION -->
+        <section class="section-about">
+            <h2 class="heading-secondary">ABOUT</h2>
+            <div class="flex-row">
+                <div class="flex-column-20">
+                        <img src="/static/media/profile-pic.jpg" alt="" class="round-img">
+                </div>
+                <div class="flex-column-fill">
+                    <div class="about-textbox">
+                        <p>Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <!-- FEATURED PROJECT: RESORT -->
-        <div class="featured-project">
+    <!-- SKILLS SECTION -->
+        <section class="section-skills">
+            <h2 class="heading-secondary">SKILLS</h2>
             <div class="flex-row">
-                <div class="featured-project__description">
-                    <div class="featured-project__title">
-                        <h3 class="heading-tertiary u-color-white">Resort Reservation Website</h3>
-                        <p>Intuitive resort reservation app built in MERN</p>
-                    </div>
-                    <h4 class="heading-quaternary u-margin-left-small">My Contribution</h4>
-                    <ul class="featured-project__list">
-                        <li class="featured-project__list-item">Delegated tasks to team of 3 devs, developing schedules and deliverables and coordinating communication</li>
-                        <li class="featured-project__list-item">Styled front-end with Bootstrap and CSS, emphasizing a visually engaging UI including image-rich search results
-                        </li>
-                        <li class="featured-project__list-item">Implemented React-Calendar to create fully integrated scheduling functionality
-                        </li>
-                        <li class="featured-project__list-item">Utilized BCrypt to protect user login information for enhanced user security</li>
-                    </ul>
+                <div class="flex-column-20">
+                        <img src="/static/media/profile-pic.jpg" alt="" class="round-img">
                 </div>
-                <img src="\static\media\project_screenshots\resort1.png" alt="" class="featured-project__image">
-            </div>
-            <div class="featured-project__gallery">
-                <img src="/static/media/project_screenshots/resort2.png" alt="" class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/resort3.png" alt="" class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/resort4.png" alt="" class="featured-project__gallery-thumbnail">
-            </div>
-        </div>
-        <!-- FEATURED PROJECT: FINANCE APP -->
-        <div class="featured-project">
-            <div class="flex-row">
-                <div class="featured-project__description">
-                    <div class="featured-project__title">
-                        <h3 class="heading-tertiary u-color-white">Personal Finance App</h3>
-                        <p>Title: "Stop Spending Money." Built in Python/Django </p>
-                    </div>
-                    <h4 class="heading-quaternary u-margin-left-small">My Contribution</h4>
-                    <ul class="featured-project__list">
-                        <li class="featured-project__list-item">Managed overall project, designing app features and wireframe, assigning tasks and deliverables, coordinating project
-                        workflow/deadlines, and overseeing version control with GitHub</li>
-                        <li class="featured-project__list-item">Constructed budgeting component/views using Django
-                        </li>
-                        <li class="featured-project__list-item">Wrote backend server infrastructure, utilizing MySQL to manage relationships between different data tables
-                        </li>
-                        <li class="featured-project__list-item">Created an attractive and responsive UI using CSS, Bootstrap, and JavaScript</li>
-                    </ul>
-                </div>
-                <img src="\static\media\project_screenshots\stopspendingmoney1.png" alt="" class="featured-project__image">
-            </div>
-            <div class="featured-project__gallery">
-                <img src="/static/media/project_screenshots/stopspendingmoney2.png" alt="" class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/stopspendingmoney3.png" alt="" class="featured-project__gallery-thumbnail">
-            </div>
-        </div>
-
-        <!-- FEATURED PROJECT: WEBBSITE STYLING DEMOS -->
-        <div class="featured-project">
-            <div class="flex-row">
-                <div class="featured-project__description">
-                    <div class="featured-project__title">
-                        <h3 class="heading-tertiary u-color-white">Website Styling Demos</h3>
-                        <p>Natours and Trillo</p>
-                    </div>
-                    <h4 class="heading-quaternary u-margin-left-small">My Contribution</h4>
-                    <ul class="featured-project__list">
-                        <li class="featured-project__list-item">Built these webpages following design tutorial from a udemy course</li>
-                        <li class="featured-project__list-item">Added a script for closing the navigation menu
-                        </li>
-                        <li class="featured-project__list-item">Personalized elements from the pages to match my own stylistic preferences
-                        </li>
-                        <li class="featured-project__list-item">Practiced skills that I used to build this portfolio website, especially grid layouts, various animations, and page scalability</li>
-                    </ul>
-                </div>
-                <img src="\static\media\project_screenshots\trillo1.png" alt="" class="featured-project__image">
-            </div>
-            <div class="featured-project__gallery">
-                <img src="/static/media/project_screenshots/natours2.png" alt=""
-                    class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/natours3.png" alt=""
-                    class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/natours4.png" alt=""
-                    class="featured-project__gallery-thumbnail">
-                <img src="/static/media/project_screenshots/natours5.png" alt=""
-                    class="featured-project__gallery-thumbnail">
-            </div>
-        </div>    
-    </section>
-    
-    <!-- CONTACT -->
-    <section class="section-contact">
-        <h2 class="heading-secondary-2 u-margin-top-large u-margin-bottom-large">Contact</h2>
-        <div class="flex-row">
-
-            <!-- Left of Row: Background Image -->
-            <div class="flex-column-40 u-padding-none">
-                <img src="/static/media/altumcode.jpg" alt="" class="rectangular-gradient-left">
-            </div>
-            
-            <!-- Right of Row: Request Freelance Work -->
-            <div class="flex-column-fill">
-                <div class="section-contact__text u-space-around">
-                    <h3 class="heading-tertiary u-color-white">Request Freelance Work</h3>
-                    <p>I am available to build websites using a variety of platforms. I can create static websites with databases from scratch or use platforms such as Wordpress, which will allow you to easily update content on your own once the project is done.</p>
-                    <p>All of my works comes with the following commitments:</p>
-                    
-                    <!-- Feature Box Grid - Display 4 boxes of commitments I make to my work-->
-                    <div class="feature-box-grid">
-
-                        <!-- Row 1 -->
-                        <div class="flex-row u-center">
-                            <div class="flex-column-45 u-padding-1rem">
-                                <div class="feature-box">
-                                    <i class="feature-box__icon icon-basic-laptop"></i>
-                                    <h3 class="feature-box__heading">100% Satisfaction Guarantee</h3>
-                                    <p class="feature-box__text">
-                                        You only pay if you are pleased with the final result.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="flex-column-45 u-padding-1rem">
-                                <div class="feature-box">
-                                    <i class="feature-box__icon icon-basic-server-cloud"></i>
-                                    <h3 class="feature-box__heading">Hosting Solutions Included</h3>
-                                    <p class="feature-box__text">
-                                        I provide a variety of hosting solutions for your project. Take total control or let me take care of things for you.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 2 -->
-                        <div class="flex-row u-center">
-                            <div class="flex-column-45 u-padding-1rem">
-                                <div class="feature-box">
-                                    <i class="feature-box__icon icon-basic-clockwise"></i>
-                                    <h3 class="feature-box__heading">Regular and Rapid Communication</h3>
-                                    <p class="feature-box__text">
-                                        I provide regular updates on progress and am fast to respond to messages.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="flex-column-45 u-padding-1rem">
-                                <div class="feature-box">
-                                    <i class="feature-box__icon icon-basic-headset"></i>
-                                    <h3 class="feature-box__heading">Lifetime Support</h3>
-                                    <p class="feature-box__text">
-                                        Free support for the lifetime of code delivered, ensuring a bug-free experience. <span
-                                        class="small-print line-break u-margin-top-small">*Does not include requests for additional content being created or significant site
-                                        changes, which would require a new contract
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="flex-column-fill">
+                    <div class="about-textbox">
+                        <p>Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- Full-Time Employment-->
-        <div class="flex-row">
-            <div class="section-contact__text u-padding-4rem">
-                <h3 class="heading-tertiary u-color-white">Full-Time Employment</h3>
-                <p>If you are a recruiter, I am available to chat about employment opportunities. Thank you for your
-                    consideration! As a full-stack developer, I am excited about both <span class="bold">front-end</span> and
-                    <span class="bold">back-end</span> positions in a variety of fields.</p>
-                <p class="u-margin-bottom-none">I am primarily interested in working for companies that are:</p>
-                <ul>
-                    <li>US-based</li>
-                    <li class="u-margin-bottom-3rem">Located in southern CA or open to remote employment</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Contact Form -->
-
-        <div class="contact-form">
+    <!-- PORTFOLIO -->
+        <section class="section-portfolio">
+            <h2 class="heading-secondary">PORTFOLIO</h2>
             <div class="flex-row">
-                <div class="flex-column-60">
-                    <h2 class="heading-secondary contact-form__heading">
-                        Get in touch
-                    </h2>
-                    <form action="https://formsubmit.co/mtowson@gmail.com" method="POST" class="contact-form__form" autocomplete="off">
-                        <label>Name:
-                            <input type="text" name="name" required class="contact-form__input">
-                        </label>
-                        <label>Email:
-                            <input type="email" name="email" required class="contact-form__input">
-                        </label>
-                        <label>Your Message:
-                            <textarea name="message" required class ="contact-form__message"></textarea>
-                        </label>
-                        <div class="contact-form__button">
-                            <button type="submit" class="wire-box">SUBMIT</button>
-                        </div>
-                    </form>
+                <div class="flex-column-20">
+                        <img src="/static/media/profile-pic.jpg" alt="" class="round-img">
                 </div>
-                <div class="contact-form__image">
-                    <img src="/static/media/contact-apps.jpg" alt="contact apps" class="rectangular-gradient-right">
+                <div class="flex-column-fill">
+                    <div class="about-textbox">
+                        <p>Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- CONTACT -->
+        <section class="section-contact">
+            <h2 class="heading-secondary u-margin-top-large u-margin-bottom-large">Contact</h2>
+            <div class="flex-row">
+
+                <!-- Left of Row: Background Image -->
+                <div class="flex-column-40 u-padding-none">
+                    <img src="/static/media/altumcode.jpg" alt="" class="rectangular-gradient-left">
+                </div>
+                
+                <!-- Right of Row: Request Freelance Work -->
+                <div class="flex-column-fill">
+                    <div class="section-contact__text u-space-around">
+                        <h3 class="heading-tertiary u-color-white">Request Freelance Work</h3>
+                        <p>I am available to build websites using a variety of platforms. I can create static websites with databases from scratch or use platforms such as Wordpress, which will allow you to easily update content on your own once the project is done.</p>
+                        <p>All of my works comes with the following commitments:</p>
+                        
+                        <!-- Feature Box Grid - Display 4 boxes of commitments I make to my work-->
+                        <div class="feature-box-grid">
+
+                            <!-- Row 1 -->
+                            <div class="flex-row u-center">
+                                <div class="flex-column-45 u-padding-1rem">
+                                    <div class="feature-box">
+                                        <i class="feature-box__icon icon-basic-laptop"></i>
+                                        <h3 class="feature-box__heading">100% Satisfaction Guarantee</h3>
+                                        <p class="feature-box__text">
+                                            You only pay if you are pleased with the final result.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex-column-45 u-padding-1rem">
+                                    <div class="feature-box">
+                                        <i class="feature-box__icon icon-basic-server-cloud"></i>
+                                        <h3 class="feature-box__heading">Hosting Solutions Included</h3>
+                                        <p class="feature-box__text">
+                                            I provide a variety of hosting solutions for your project. Take total control or let me take care of things for you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="flex-row u-center">
+                                <div class="flex-column-45 u-padding-1rem">
+                                    <div class="feature-box">
+                                        <i class="feature-box__icon icon-basic-clockwise"></i>
+                                        <h3 class="feature-box__heading">Regular and Rapid Communication</h3>
+                                        <p class="feature-box__text">
+                                            I provide regular updates on progress and am fast to respond to messages.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex-column-45 u-padding-1rem">
+                                    <div class="feature-box">
+                                        <i class="feature-box__icon icon-basic-headset"></i>
+                                        <h3 class="feature-box__heading">Lifetime Support</h3>
+                                        <p class="feature-box__text">
+                                            Free support for the lifetime of code delivered, ensuring a bug-free experience. <span
+                                            class="small-print line-break u-margin-top-small">*Does not include requests for additional content being created or significant site
+                                            changes, which would require a new contract
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+                <div class="flex-row">
+                    <div class="flex-column-60">
+                        <h2 class="heading-secondary contact-form__heading">
+                            Get in touch
+                        </h2>
+                        <form action="https://formsubmit.co/mtowson@gmail.com" method="POST" class="contact-form__form" autocomplete="off">
+                            <label>Name:
+                                <input type="text" name="name" required class="contact-form__input">
+                            </label>
+                            <label>Email:
+                                <input type="email" name="email" required class="contact-form__input">
+                            </label>
+                            <label>Your Message:
+                                <textarea name="message" required class ="contact-form__message"></textarea>
+                            </label>
+                            <div class="contact-form__button">
+                                <button type="submit" class="wire-box">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-form__image">
+                        <img src="/static/media/contact-apps.jpg" alt="contact apps" class="rectangular-gradient-right">
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
 </body>
