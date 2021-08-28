@@ -87,6 +87,7 @@
     .flex-row {
         [class^="flex-column-"] {
             position: relative;
+            padding: 3rem;
         }
 
         // Left-most column
@@ -132,7 +133,6 @@
         }
 
         &.single-row {
-
             [class^="flex-column"]:not(:last-child):after{
                 content: "";
                 background: linear-gradient(180deg, 

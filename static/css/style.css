@@ -603,7 +603,8 @@ body {
   content: none; }
 
 .gradient-grid .flex-row [class^="flex-column-"] {
-  position: relative; }
+  position: relative;
+  padding: 3rem; }
 
 .gradient-grid .flex-row [class^="flex-column-"]:first-child:before {
   content: "";
