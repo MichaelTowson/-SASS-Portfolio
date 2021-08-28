@@ -27,15 +27,8 @@
         z-index: 4;
 
         &:hover {
-            z-index: 2;
             @include hover-grow;
             @include light-up-tertiary;
-        }
-
-        &:hover &-text {
-            color: yellow;
-            visibility: visible;
-            transform: translateY(80px);
         }
     }
 
