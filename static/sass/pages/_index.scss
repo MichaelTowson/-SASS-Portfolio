@@ -34,10 +34,6 @@
     flex-direction: column;   
     padding: 14rem 0rem;
 
-    & p {
-        color: white;
-    }
-
     & li {
         color: white;
         margin: 0 4rem;
@@ -46,8 +42,6 @@
     &__text {
         display: flex;
         flex-direction: column;
-        padding: 0 4rem;
-        align-content: space-between;
+        padding: 0rem 20rem 4rem 20rem;
     }
 }
-

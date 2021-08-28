@@ -50,7 +50,7 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
     margin-bottom: 4rem;
-    text-align: left;
+    text-align: center;
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -89,7 +89,8 @@ body {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: $color-primary;
+    color: white;
+    text-align: center;
 }
 
 .heading-quaternary {
@@ -100,7 +101,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.bold {
+.text-bold {
     font-weight: bold;
 }
 
@@ -111,6 +112,10 @@ body {
 
 .line-break {
     display: block;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 
