@@ -9,10 +9,11 @@ body {
     font-family: "Lato", sans-serif; /* This was imported on my index.html page. */
     font-weight: 400;
     line-height: 1.7;
-    color: $color-grey-dark-2;
+    color: rgb(219, 210, 210);
 }
 
 .heading-primary {
+    padding-top: 4rem;
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
@@ -46,12 +47,15 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+    border-bottom: solid rgba($color-tertiary, 1) .2px;
+    width: 33%;
+    align-self: center;
     display: inline-block;
     letter-spacing: .2rem;
     transition: all .2s;
-    margin-bottom: 4rem;
     text-align: center;
-
     @include respond(tab-port) {
         font-size: 3rem;
     }
