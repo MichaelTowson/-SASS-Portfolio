@@ -9,8 +9,7 @@
         linear-gradient(
                 to right,
                 rgba($color-black, 1),
-                rgba($color-primary, 1)),
-        url(../img/hero.jpg);
+                rgba($color-primary, 1));
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);

@@ -7,7 +7,7 @@
 .section-about {
     display: flex;
     flex-direction: column;
-    padding: 14rem 20rem;
+    padding: 8rem 20rem;
 }
 
 .about-textbox {
@@ -19,12 +19,12 @@
 .section-skills {
     display: flex;
     flex-direction: column;    
-    padding: 14rem 20rem;
+    padding: 8rem 20rem;
 }
 
 //PORTFOLIO SECTION
 .section-portfolio {
-    padding: 14rem 20rem;
+    padding: 8rem 20rem;
     display: flex;
     flex-direction: column;
 
@@ -47,7 +47,7 @@
 .section-hire {
     display: flex;
     flex-direction: column;   
-    padding: 14rem 0rem;
+    padding: 8rem 0rem;
 
     & li {
         color: white;
@@ -57,7 +57,7 @@
 
 //CONTACT SECTION
 .section-contact {
-    padding: 14rem 20rem;
+    padding: 8rem 0rem;
     display: flex;
     flex-direction: column;
 }
