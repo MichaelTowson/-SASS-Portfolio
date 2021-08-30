@@ -534,11 +534,10 @@ body {
   overflow: hidden; }
   .contact-form__form {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem 0 2rem 6rem;
+    padding: 2rem 12rem;
     width: 60%;
     margin: 0 auto; }
-  .contact-form__heading {
-    margin-top: 2rem;
+  .contact-form label {
     color: #ffb900; }
   .contact-form__input {
     display: block;
@@ -546,10 +545,16 @@ body {
     margin-bottom: 2rem;
     transition: all .2s;
     border-radius: 8px; }
+    .contact-form__input:focus {
+      border: solid #73b7f6 4px;
+      transform: scale(1.05) translatex(0.5rem);
+      margin-bottom: 3rem;
+      background-color: #d1f2fb; }
   .contact-form__message {
     display: block;
-    width: 80%;
+    width: 100%;
     height: 10rem;
+    font-size: 2rem;
     border-radius: 8px;
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.95);
@@ -558,11 +563,17 @@ body {
     transition: all .2s;
     resize: none;
     margin-bottom: 4rem; }
+    .contact-form__message:focus {
+      border: solid #73b7f6 4px;
+      transform: scale(1.05) translatex(1.75rem);
+      margin-bottom: 3rem;
+      background-color: #d1f2fb; }
   .contact-form__button {
     border: solid white 1px;
     padding: 1rem;
     max-width: 40rem;
-    justify-self: center; }
+    justify-self: center;
+    margin: 0 auto; }
 
 .gradient-grid {
   padding: 0rem 12rem; }
