@@ -330,7 +330,6 @@ body {
     margin: 0 4rem; }
 
 .section-contact {
-  background-color: black;
   display: flex;
   flex-direction: column; }
 
@@ -735,36 +734,20 @@ body {
         content: "";
         background: linear-gradient(180deg, rgba(255, 185, 0, 0) 10%, #ffb900 50%, rgba(255, 185, 0, 0) 90%); } }
 
-.scrolling-background__movie {
+.scrolling-background {
   top: 0;
   left: 0;
-  width: 100%;
   opacity: .2;
   z-index: -100;
-  height: 100vh;
-  position: fixed; }
-
-.scrolling-background__bar-horizontal {
-  top: 15vh;
-  left: 0;
-  height: 10vh;
   width: 100%;
-  background-color: rgba(115, 183, 246, 0.3);
-  z-index: -99;
-  height: 50vh;
+  height: 100vh;
   position: fixed;
-  border-left: solid rgba(115, 183, 246, 0.5) 1.5rem;
-  border-right: solid rgba(115, 183, 246, 0.5) 1.5rem; }
-
-.scrolling-background__bar-right-vertical {
-  top: 0;
-  left: 75vw;
-  height: 100%;
-  width: 25vw;
-  background: linear-gradient(to left, rgba(115, 183, 246, 0.5) 10%, rgba(115, 183, 246, 0) 50%);
-  z-index: -99;
-  position: fixed;
-  border-right: solid rgba(115, 183, 246, 0.5) 1.5rem; }
+  overflow: hidden; }
+  .scrolling-background__movie {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    z-index: -100; }
 
 .header {
   display: flex;
