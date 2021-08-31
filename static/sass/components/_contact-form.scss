@@ -14,13 +14,11 @@
     transition: transform .25s;
     height: 100%;
     overflow: hidden;
-    margin-bottom: 10rem;
 
     &__form {
         background-color: rgba($color-black, .5);
         padding: 2rem 12rem;
         width: 60%;
-        margin: 0 auto;
     }
 
     label {

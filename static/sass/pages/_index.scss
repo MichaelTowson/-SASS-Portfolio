@@ -7,7 +7,7 @@
 .section-about {
     display: flex;
     flex-direction: column;
-    padding: 8rem 20rem;
+    padding: 8rem 30rem;
 }
 
 .about-textbox {
@@ -19,18 +19,18 @@
 .section-skills {
     display: flex;
     flex-direction: column;    
-    padding: 8rem 20rem;
+    padding: 8rem 30rem;
 }
 
 //PORTFOLIO SECTION
 .section-portfolio {
-    padding: 8rem 20rem;
+    padding: 8rem 30rem;
     display: flex;
     flex-direction: column;
 
     &__img-50 {
         margin: 3rem 0;
-        height: 40rem;
+        height: 30rem;
     }
 
     &__img-33 {
@@ -58,7 +58,6 @@
 //CONTACT SECTION
 .section-contact {
     background-color: black;
-    padding: 8rem 0rem;
     display: flex;
     flex-direction: column;
 }

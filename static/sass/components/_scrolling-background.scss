@@ -1,25 +1,37 @@
 .scrolling-background {
 
     &__movie {
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: .2;
-    z-index: -100;
-    height: 100vh;
-    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: .2;
+        z-index: -100;
+        height: 100vh;
+        position: fixed;
     }
 
-    &__bar{
-    top: 15vh;
-    left: 0;
-    height: 10vh;
-    width: 100%;
-    background-color: rgba($color-tertiary, 0.3);
-    z-index: -99;
-    height: 50vh;
-    position: fixed;
-    border-left: solid rgba($color-tertiary, 0.5) 1.5rem;
-    border-right: solid rgba($color-tertiary, 0.5) 1.5rem;
+    &__bar-horizontal{
+        top: 15vh;
+        left: 0;
+        height: 10vh;
+        width: 100%;
+        background-color: rgba($color-tertiary, 0.3);
+        z-index: -99;
+        height: 50vh;
+        position: fixed;
+        border-left: solid rgba($color-tertiary, 0.5) 1.5rem;
+        border-right: solid rgba($color-tertiary, 0.5) 1.5rem;
+    }
+
+    &__bar-right-vertical{
+        top: 0;
+        left: 75vw;
+        height: 100%;
+        width: 25vw;
+        background: linear-gradient(to left, 
+                    rgba($color-tertiary,0.5) 10%, rgba($color-tertiary, 0) 50%);
+        z-index: -99;
+        position: fixed;
+        border-right: solid rgba($color-tertiary, 0.5) 1.5rem;
     }
 }
