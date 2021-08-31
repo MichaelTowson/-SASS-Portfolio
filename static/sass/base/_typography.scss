@@ -12,6 +12,14 @@ body {
     color: rgb(219, 210, 210);
 }
 
+.rounded-textbox {
+    background-color: black;
+    border: solid white 1px;
+    box-shadow: $shadow;
+    border-radius: 14px;
+    padding: 2rem;
+}
+
 .heading-primary {
     padding-top: 4rem;
     color: #fff;
