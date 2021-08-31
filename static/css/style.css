@@ -171,6 +171,18 @@ body {
   padding-left: 20rem;
   padding-right: 20rem; }
 
+@media (max-width: 75em) {
+  .u-hide-tab-land {
+    display: none !important; } }
+
+@media (max-width: 75em) {
+  .u-hide-tab-port {
+    display: none !important; } }
+
+@media (max-width: 75em) {
+  .u-hide-phone {
+    display: none !important; } }
+
 .u-align-items-top {
   align-items: flex-start !important; }
 
@@ -589,9 +601,12 @@ body {
 .gradient-grid {
   background-color: black;
   border: solid white 1px;
-  padding: 0rem 12rem;
+  padding: 0rem 6rem;
   border-radius: 14px;
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+  @media (max-width: 75em) {
+    .gradient-grid {
+      display: none; } }
   .gradient-grid__icon {
     display: block;
     position: relative;
@@ -651,6 +666,77 @@ body {
   .gradient-grid .flex-row.single-row [class^="flex-column"]:not(:last-child):after {
     content: "";
     background: linear-gradient(180deg, rgba(255, 185, 0, 0) 10%, #ffb900 50%, rgba(255, 185, 0, 0) 90%); }
+
+.gradient-grid-tab {
+  display: none; }
+  @media (max-width: 75em) {
+    .gradient-grid-tab {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      border: solid white 1px;
+      padding: 0rem 6rem;
+      border-radius: 14px;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+      .gradient-grid-tab__icon {
+        display: block;
+        position: relative;
+        transition: all .2s;
+        width: 128px;
+        border-radius: 25%;
+        padding: 1rem;
+        z-index: 4;
+        margin: 0 auto; }
+        .gradient-grid-tab__icon:hover {
+          border-radius: 100%;
+          background-color: rgba(115, 183, 246, 0.7); }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:before {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:after {
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .gradient-grid-tab .flex-row:first-child [class^="flex-column-"]:not(:last-child):after {
+        content: "";
+        background: linear-gradient(0deg, #ffb900 40%, #020761 100%); }
+      .gradient-grid-tab .flex-row:first-child [class^="flex-column-"]:before {
+        content: "";
+        background: linear-gradient(90deg, #ffb900 0%, rgba(2, 7, 97, 0) 50%, #ffb900 100%); }
+      .gradient-grid-tab .flex-row:last-child [class^="flex-column-"]:first-child:before {
+        content: none; }
+      .gradient-grid-tab .flex-row:last-child [class^="flex-column-"]:not(:last-child):after {
+        content: "";
+        background: linear-gradient(180deg, #ffb900 40%, #020761 100%); }
+      .gradient-grid-tab .flex-row:last-child [class^="flex-column-"]:last-child:before {
+        content: none; }
+      .gradient-grid-tab .flex-row:last-child [class^="flex-column-"]:before {
+        content: none; }
+      .gradient-grid-tab .flex-row [class^="flex-column-"] {
+        position: relative;
+        padding: 3rem; }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:first-child:before {
+        content: "";
+        background: linear-gradient(270deg, #ffb900 40%, rgba(2, 7, 97, 0.6) 100%); }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:last-child:before {
+        content: "";
+        background: linear-gradient(90deg, #ffb900 40%, rgba(2, 7, 97, 0.6) 100%); }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:last-child:after {
+        content: none; }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:before {
+        content: "";
+        background: linear-gradient(90deg, #ffb900 0%, rgba(2, 7, 97, 0) 50%, #ffb900 100%); }
+      .gradient-grid-tab .flex-row [class^="flex-column-"]:after {
+        content: "";
+        background: linear-gradient(180deg, #ffb900 0%, rgba(2, 7, 97, 0) 50%, #ffb900 100%); }
+      .gradient-grid-tab .flex-row.single-row [class^="flex-column"]:not(:last-child):after {
+        content: "";
+        background: linear-gradient(180deg, rgba(255, 185, 0, 0) 10%, #ffb900 50%, rgba(255, 185, 0, 0) 90%); } }
 
 .scrolling-background__movie {
   top: 0;

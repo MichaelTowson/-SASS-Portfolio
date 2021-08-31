@@ -4,6 +4,24 @@
     padding-right: 20rem;
 }
 
+//Page-Responsiveness
+.u-hide-tab-land {
+    @include respond(tab-land) {
+    display: none !important;
+    }
+}
+.u-hide-tab-port {
+    @include respond(tab-land) {
+    display: none !important;
+    }
+}
+
+.u-hide-phone {
+    @include respond(tab-land) {
+    display: none !important;
+    }
+}
+
 //Flex
 .u-align-items-top {align-items:flex-start !important;}
 .u-space-between {justify-content: space-between !important;}
