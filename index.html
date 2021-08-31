@@ -25,13 +25,21 @@
 </head>
 
 <body>
+    <!-- Load Scrolling Background Movie -->
+    <div class="scrolling-background__movie">
+        <video autoplay muted loop>
+            <source src="static/media/dust_background.webm" type="video/mp4">
+        </video>
+    </div>
+    <!-- Load Scrolling Background Bar-->
+    <div class="scrolling-background__bar"></div>
+    
     <main class="main">
     <!-- HEADER -->
         <header class="header">
             <div class="bg-video">
                 <video class="bg-video__video" autoplay muted loop>
                     <source src="static/media/codingwebm.webm" type="video/mp4">
-                    Your browser does not support playing this video
                 </video>
             </div>
             <div class="header__logo-box u-animation-moveInBottom">
@@ -55,7 +63,7 @@
                 </div>
                 <div class="flex-column-fill">
                     <div class="about-textbox">
-                        <p>Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
+                        <p class="rounded-textbox">Hello. My name is Michael Towson, and I am a full-stack engineer. My passion is for making cutting-edge, user-friendly, and beautiful web applications that solve real-world problems and improve the lives of others. I would love to apply my skills and talents to your next big project!
                     </div>
                 </div>
             </div>
@@ -64,7 +72,7 @@
     <!-- SKILLS SECTION -->
         <section class="section-skills">
             <h2 class="heading-secondary">SKILLS</h2>
-                <p class='text-bold u-margin-bottom-large'>Let's make your next project great. I can help with:</p>
+                <p class='rounded-textbox text-bold u-margin-bottom-large'>Let's make your next project great. I can help with:</p>
             <div class="gradient-grid">
                 <!-- Grid Row 1 -->
                 <div class="flex-row">
@@ -132,7 +140,7 @@
     <!-- PORTFOLIO -->
         <section class="section-portfolio">
             <h2 class="heading-secondary">PORTFOLIO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque quia quasi ut. Molestias, alias? Qui expedita dolor minima? Iusto dicta fugiat atque sapiente quo voluptatum culpa earum quas iste?
+                <p class="rounded-textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque quia quasi ut. Molestias, alias? Qui expedita dolor minima? Iusto dicta fugiat atque sapiente quo voluptatum culpa earum quas iste?
             
             <!-- ROW 1: Personal Projects -->
             <div class="flex-row">
@@ -163,23 +171,20 @@
         </section>
 
         <!-- HIRE -->
-        <section class="section-hire">
+        <br class="section-hire">
                 <div class="flex-column standard-padding-width">
                 <h2 class="heading-secondary">HIRE</h2>
-                    <p>I am available to build websites using a variety of platforms. I can create static websites with databases from
-                        scratch or use platforms such as Wordpress, which will allow you to easily update content on your own once the
-                        project is done.</p>
-                    <p class="text-align-right text-bold">All of my works comes with the following commitments:</p>
+                    <p class ="rounded-textbox u-margin-bottom-3rem">I am available to build websites using a variety of platforms. I can create static websites with databases from scratch or use platforms such as Wordpress, which will allow you to easily update content on your own once the project is done.<br></br><span class="text-bold text-align-right">All of my work comes with the following commitments:</span></p>
                 </div>
 
             <div class="flex-row">
                 <!-- Left of Row: Background Image -->
-                <div class="flex-column-40 u-padding-none">
-                    <img src="/static/media/altumcode.jpg" alt="" class="img-rectangular-gradient-left img-curved-right">
+                <div class="flex-column-25 u-padding-none">
+                    <img src="/static/media/altumcode.jpg" alt="" class=" img-curved-right">
                 </div>
             
-                <!-- Right of Row: Request Freelance Work -->
-                <div class="flex-column-fill">
+                <!-- Right of Row: Featured-Boxes -->
+                <div class="flex-column-75">
                     <div class="feature-box-grid">
         
                         <!-- Row 1 -->

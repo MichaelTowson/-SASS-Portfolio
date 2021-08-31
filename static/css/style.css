@@ -19,17 +19,19 @@ html {
 
 body {
   box-sizing: border-box;
-  border: solid black 1.5rem;
+  padding: 1.5rem;
   min-height: 100vh;
   background-color: black;
-  padding: 1px; }
+  position: relative;
+  overflow: show; }
   @media (max-width: 56.25em) {
     body {
       font-size: 50%;
       border: solid black .5rem; } }
 
 main {
-  border: solid white 1px; }
+  border: solid white 1px;
+  z-index: -50; }
 
 p, li {
   font-size: 1.6rem; }
@@ -42,6 +44,13 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #dbd2d2; }
+
+.rounded-textbox {
+  background-color: black;
+  border: solid white 1px;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  padding: 2rem; }
 
 .heading-primary {
   padding-top: 4rem;
@@ -308,6 +317,7 @@ body {
     margin: 0 4rem; }
 
 .section-contact {
+  background-color: black;
   padding: 8rem 0rem;
   display: flex;
   flex-direction: column; }
@@ -488,7 +498,7 @@ body {
     font-size: 1.6rem; }
 
 .feature-box-grid {
-  margin: 12rem 0;
+  margin: 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -501,7 +511,8 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: transform .25s;
-  height: 100%; }
+  height: 100%;
+  background-color: black; }
   @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -518,8 +529,7 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1rem) scale(1.03);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    background-color: rgba(2, 7, 97, 0.5); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .contact-form {
   display: flex;
@@ -531,7 +541,8 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: transform .25s;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 10rem; }
   .contact-form__form {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem 12rem;
@@ -576,7 +587,11 @@ body {
     margin: 0 auto; }
 
 .gradient-grid {
-  padding: 0rem 12rem; }
+  background-color: black;
+  border: solid white 1px;
+  padding: 0rem 12rem;
+  border-radius: 14px;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .gradient-grid__icon {
     display: block;
     position: relative;
@@ -636,6 +651,27 @@ body {
   .gradient-grid .flex-row.single-row [class^="flex-column"]:not(:last-child):after {
     content: "";
     background: linear-gradient(180deg, rgba(255, 185, 0, 0) 10%, #ffb900 50%, rgba(255, 185, 0, 0) 90%); }
+
+.scrolling-background__movie {
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .2;
+  z-index: -100;
+  height: 100vh;
+  position: fixed; }
+
+.scrolling-background__bar {
+  top: 15vh;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(115, 183, 246, 0.3);
+  z-index: -99;
+  height: 50vh;
+  position: fixed;
+  border-left: solid rgba(115, 183, 246, 0.5) 1.5rem;
+  border-right: solid rgba(115, 183, 246, 0.5) 1.5rem; }
 
 .header {
   display: flex;

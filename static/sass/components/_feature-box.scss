@@ -1,5 +1,5 @@
 .feature-box-grid {
-    margin: 12rem 0;
+    margin: 6rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +14,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
     transition: transform .25s;
     height: 100%;
+    background-color: black;
 
     @include respond(tab-port) {
         padding: 2rem;
@@ -39,7 +40,6 @@
     &:hover {
         transform: translateY(-1rem) scale(1.03);
         box-shadow: 0 1.5rem 4rem rgba($color-black, .40);
-        background-color: rgba($color-primary, .5);
     }
 
 }

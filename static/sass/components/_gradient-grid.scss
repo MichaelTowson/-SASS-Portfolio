@@ -1,6 +1,9 @@
 .gradient-grid {
-
+    background-color: black;
+    border: solid white 1px;
     padding: 0rem 12rem;
+    border-radius: 14px;
+    box-shadow: $shadow;
 
     &__icon {
         display: block;
