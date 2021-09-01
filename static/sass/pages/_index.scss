@@ -10,6 +10,18 @@
     padding: 8rem 30rem;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-land) {
+        padding: 6rem 12rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 6rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 .about-textbox {
@@ -22,6 +34,18 @@
     display: flex;
     flex-direction: column;    
     padding: 8rem 22rem;
+
+    @include respond(tab-land) {
+        padding: 6rem 12rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 6rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 //PORTFOLIO SECTION
@@ -40,9 +64,17 @@
         height: 20rem;
     }
 
-    // @include respond(big-desktop) {
-    //     padding: 20rem 40rem;
-    // }
+    @include respond(tab-land) {
+        padding: 6rem 12rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 6rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 //HIRE SECTION
@@ -54,6 +86,18 @@
     & li {
         color: white;
         margin: 0 4rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 6rem 0rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 4rem 0rem;
+    }
+
+    @include respond(phone) {
+        padding: 0;
     }
 
     &__feature-boxes {
@@ -69,6 +113,18 @@
                 rgba($color-black, 1),
                 rgba($color-primary, 0.6)), 
         url("../media/altumcode.jpg");
+
+        @include respond(tab-land) {
+            padding: 0rem 14vw;
+        }
+
+        @include respond(tab-port) {
+            padding: 0rem 8vw;
+        }
+
+        @include respond(phone) {
+            padding: 0rem;
+        }
     }
 }
 

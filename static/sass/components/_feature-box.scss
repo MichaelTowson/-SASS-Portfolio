@@ -3,6 +3,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    @include respond(tab-land) {
+        margin: 4rem 0;
+    }
+
+    @include respond(tab-port) {
+        margin: 2rem 0;
+    }
+
+    @include respond(phone) {
+        margin: 0;
+    }
 }
 
 .feature-box {
@@ -15,10 +27,6 @@
     transition: transform .25s;
     height: 100%;
     background-color: black;
-
-    @include respond(tab-port) {
-        padding: 2rem;
-    }
 
     &__heading {
         color: $color-secondary;

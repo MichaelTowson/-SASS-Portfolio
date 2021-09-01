@@ -18,8 +18,23 @@
     &__form {
         background-color: rgba($color-black, .5);
         padding: 2rem 12rem;
-        width: 60%;
+        width: 70%;
         align-self: center;
+
+        @include respond(tab-land) {
+            padding: 1rem 8rem;
+            width: 80%;
+        }
+
+        @include respond(tab-port) {
+            padding: 0rem 6rem;
+            width: 90%;
+        }
+
+        @include respond(phone) {
+            padding: 2rem;
+            width: 100%;
+        }
     }
 
     label {
