@@ -3,6 +3,16 @@
     display: flex;
     // flex-wrap: wrap;
     flex-direction: row;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+.flex-row-center-spread {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 //FLEX COLUMN

@@ -5,6 +5,11 @@ p, li {
     }
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 body {
     font-family: "Lato", sans-serif; /* This was imported on my index.html page. */
     font-weight: 400;
@@ -128,6 +133,10 @@ body {
 
 .text-align-right {
     text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 

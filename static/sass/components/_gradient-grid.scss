@@ -4,9 +4,8 @@
         display: none;
     }
 
-    background-color: black;
     padding: 0rem 6rem;
-    border-radius: 14px;
+    border-radius: 20px;
     box-shadow: $shadow;
 
     &__icon {
@@ -158,8 +157,6 @@
     @include respond(tab-land) {
         display: flex;
         flex-direction: column;
-        background-color: black;
-        border: solid white 1px;
         padding: 0rem 6rem;
         border-radius: 14px;
         box-shadow: $shadow;
