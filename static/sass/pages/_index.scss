@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     padding: 8rem 30rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-textbox {
@@ -15,11 +17,11 @@
     align-self: center;
 }
 
-//TECHNOLOGIES SECTION
+//SKILLS SECTION
 .section-skills {
     display: flex;
     flex-direction: column;    
-    padding: 8rem 30rem;
+    padding: 8rem 22rem;
 }
 
 //PORTFOLIO SECTION
@@ -52,6 +54,21 @@
     & li {
         color: white;
         margin: 0 4rem;
+    }
+
+    &__feature-boxes {
+        padding: 0rem 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-size: cover;
+        background-image:
+        linear-gradient(
+                to right,
+                rgba($color-black, 1),
+                rgba($color-primary, 0.6)), 
+        url("../media/altumcode.jpg");
     }
 }
 
